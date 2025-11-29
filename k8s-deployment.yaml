@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "${tenant}-app"
-  namespace: "${tenant}"
+  name: ${tenant}-app
+  namespace: ${tenant}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "${tenant}-app"
+      app: ${tenant}-app
   template:
     metadata:
       labels:
-        app: "${tenant}-app"
+        app: ${tenant}-app
     spec:
       containers:
       - name: app

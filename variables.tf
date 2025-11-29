@@ -18,4 +18,7 @@ variable "cluster_ca_certificate" {
   description = "Base64 encoded CA certificate"
 }
 
-
+variable "tenant_name" {
+  type = string
+  description = "Tenant namespace name"
+}
